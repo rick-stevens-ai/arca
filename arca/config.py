@@ -8,7 +8,8 @@ from pathlib import Path
 
 
 def _env(key: str, default: str) -> str:
-    return os.environ.get(key, default)
+    v = os.environ.get(key)
+    return v if v not in (None, "") else default
 
 
 @dataclass
@@ -52,8 +53,10 @@ class Config:
     scout_root: str = _env("ARCA_SCOUT_ROOT", "/Volumes/SG-1-8TB/scout-corpus")
 
     def index_path(self, name: str) -> Path:
-        self.index_dir.mkdir(parents=True, exist_ok=True)
-        return self.index_dir / name
+        # guard against an empty ARCA_INDEX_DIR (stripped env) → never mkdir ''
+        base = self.index_dir if str(self.index_dir).strip() else (Path.home() / "arca-index")
+        base.mkdir(parents=True, exist_ok=True)
+        return base / name
 
 
 DEFAULT = Config()

@@ -69,7 +69,27 @@ citations), `related_papers`, and `get_paper`, over MCP, from anywhere on the ta
 
 ## Status
 
-**Scaffold** — 2026-08-01. Core module interfaces defined; embedding/index build and
-MCP serving to be wired against the live corpus next. Deploy target: uicgpu.
+**Scaffold + live on uicgpu** — 2026-08-01. MCP service running on uicgpu
+(`100.81.132.121:8890/mcp`, HTTP 200 verified over Tailscale) in fixture mode.
+Environment locked (`requirements.txt` + `environment.yml`). Next: build the LUCID
+index and bind the service to it.
 
 See `docs/DESIGN.md` for decisions, defaults, and the build plan.
+
+## Reproduce the environment
+
+Verified-good pins live in `requirements.txt` (frozen from the running uicgpu env).
+
+```bash
+# any host with python >=3.11
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt      # locked, known-good
+pip install -e .                     # arca itself
+python -m pytest tests/ -q           # 6 smoke tests, no corpus needed
+
+# uicgpu (conda path): uses the fleet miniforge3 python 3.13
+mamba env create -f environment.yml && conda activate arca && pip install -e .
+```
+
+Regenerate the lock after a deliberate dep bump + re-verify:
+`pip freeze | grep -ivE '^-e |arca==' | sort > requirements.txt`

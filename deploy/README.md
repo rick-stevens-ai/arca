@@ -5,16 +5,24 @@ Tailscale.
 
 ## One-time setup
 
+Arca is a **private** repo — uicgpu has no GitHub creds, so `git clone` there fails.
+Push from m1, then **rsync the checkout** to uicgpu (not `git clone`):
+
 ```bash
-# on m1 (or wherever the repo lives), push to GitHub first, then on uicgpu:
-ssh uicgpu
-git clone https://github.com/rick-stevens-ai/arca.git ~/arca
-bash ~/arca/deploy/bootstrap_uicgpu.sh      # makes ~/.arca-venv, installs arca + deps
+# from m1 (repo at ~/code/arca):
+rsync -az --delete \
+  --exclude='.venv/' --exclude='arca-index/' --exclude='__pycache__/' \
+  --exclude='*.pyc' --exclude='.git/' \
+  ~/code/arca/ uicgpu:~/arca/
+
+# on uicgpu — use the existing miniforge python 3.13 (system python is 3.8):
+ssh uicgpu '~/miniforge3/bin/python -m venv ~/.arca-venv && \
+  ~/.arca-venv/bin/pip install -e ~/arca'
 ```
 
-`bootstrap_uicgpu.sh` needs a python ≥3.11 on uicgpu (system is 3.8). If none exists,
-install via pyenv/conda first (`conda create -n arca python=3.11`), then point
-`ARCA_VENV` at it or let the script find it.
+uicgpu already has **miniforge3 (python 3.13.12)** at `~/miniforge3` — no python
+install needed. `bootstrap_uicgpu.sh` will also find it, but the rsync+miniforge path
+above is the proven one for this private repo.
 
 ## Launch (fixture mode — no corpus, proves the service)
 

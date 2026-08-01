@@ -1,0 +1,18 @@
+# Arca — conda/mamba environment for the uicgpu deploy.
+# The fleet standard on uicgpu is miniforge3 (python 3.13). This creates an
+# isolated `arca` env rather than leaning on a bare venv.
+#
+#   mamba env create -f environment.yml      # or: conda env create -f environment.yml
+#   conda activate arca
+#   pip install -e .                          # install arca itself (editable)
+#
+# We install the python deps via pip (inside the env) to match requirements.txt
+# exactly — conda-forge builds of mcp/faiss can drift from the verified pins.
+name: arca
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - pip
+  - pip:
+      - -r requirements.txt
