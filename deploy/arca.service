@@ -1,0 +1,32 @@
+# systemd template for the Arca MCP service on uicgpu (Linux).
+# Install:
+#   sudo cp deploy/arca.service /etc/systemd/system/arca.service   # edit User/paths
+#   sudo systemctl daemon-reload && sudo systemctl enable --now arca
+# (Or user unit: ~/.config/systemd/user/arca.service + `systemctl --user enable --now arca`)
+
+[Unit]
+Description=Arca corpus RAG MCP service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# EDIT these for the deploy user:
+User=%i
+Environment=ARCA_VENV=%h/.arca-venv
+Environment=ARCA_HOME=%h/arca
+Environment=ARCA_HOST=0.0.0.0
+Environment=ARCA_PORT=8890
+Environment=ARCA_INDEX_DIR=%h/arca-index
+Environment=ARCA_EMBED_BASE_URL=http://100.86.220.115:44497/v1
+Environment=ARCA_EMBED_API_KEY=stevens
+Environment=ARCA_GEN_BASE_URL=http://100.86.220.115:44497/v1
+Environment=ARCA_GEN_API_KEY=stevens
+# set ARCA_INDEX_NAME once an index is built, e.g.:
+# Environment=ARCA_INDEX_NAME=lucid
+ExecStart=/bin/bash -lc 'source $ARCA_VENV/bin/activate && exec python -m arca.server ${ARCA_INDEX_NAME:+--index $ARCA_INDEX_NAME}'
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

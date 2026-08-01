@@ -1,0 +1,75 @@
+# Arca
+
+**Arca** is a streamlined retrieval-augmented-generation (RAG) service over Rick's
+scientific corpora (OSTI + SCOUT + LUCID), exposed to every agent and model in the
+fleet **as an MCP service** named `arca`.
+
+It is a lean re-implementation of the HiPerRAG pattern (distllm retriever + BYO-LLM
+generation) without the multi-thousand-GPU HPC machinery — sized to run as a single
+always-on service on **uicgpu** and reachable over Tailscale.
+
+> One corpus endpoint the whole agent family can hit on demand.
+
+## Why
+
+We have ~280K OSTI papers, a SCOUT corpus, and the ~45K-paper LUCID set, all parsed to
+`.md` (Marker) and `.mmd` (Nougat) on `SG-1-8TB`. Today each agent re-derives access.
+Arca makes the corpus a **shared retrieval tool**: `search`, `answer` (grounded, with
+citations), `related_papers`, and `get_paper`, over MCP, from anywhere on the tailnet.
+
+## Architecture
+
+```
+                       MCP clients (agents + models)
+                                  │  MCP (Streamable HTTP over Tailscale)
+                    ┌─────────────┴─────────────┐
+                    │   arca.server  (MCP)       │   FastMCP app; tools:
+                    │   search / answer /        │   arca.search, arca.answer,
+                    │   related_papers / get_paper│   arca.related_papers, arca.get_paper
+                    └─────────────┬─────────────┘
+                    ┌─────────────┴─────────────┐
+                    │   arca.retrieve            │   hybrid: vector (FAISS/Qdrant)
+                    │   vector + BM25 + filter   │   + BM25 lexical + metadata filter
+                    └──────┬──────────────┬──────┘
+             ┌─────────────┴──┐    ┌──────┴──────────────┐
+             │  arca.index    │    │  arca.generate      │
+             │  embed+build   │    │  grounded synthesis │
+             │  (Argo embed)  │    │  (uicgpu-local /    │
+             │  dim=1536 lock │    │   Argo / CELS)      │
+             └───────┬────────┘    └─────────────────────┘
+                     │
+             ┌───────┴────────┐
+             │  arca.corpus   │   loaders: OSTI catalog / SCOUT / LUCID
+             │  .md/.mmd →    │   → chunk → (id, text, metadata)
+             │  chunks        │
+             └────────────────┘
+```
+
+## Layout
+
+| Path | Purpose |
+|---|---|
+| `arca/corpus/` | Corpus loaders: OSTI catalog, SCOUT, LUCID → normalized `Document`/`Chunk` |
+| `arca/index/` | Chunking + embedding (Argo, **dim 1536 locked**) + vector index build |
+| `arca/retrieve/` | Hybrid retriever: vector + BM25 + metadata filter, RRF fusion |
+| `arca/generate/` | BYO-LLM grounded synthesis (uicgpu-local / Argo / CELS) |
+| `arca/server/` | **The `arca` MCP service** — FastMCP app exposing the tools |
+| `deploy/` | uicgpu launch + supervision (nohup/systemd), Tailscale exposure |
+| `tests/` | Unit + smoke tests |
+| `docs/DESIGN.md` | Full design + decisions log |
+
+## MCP tools
+
+| Tool | Signature (conceptual) | Returns |
+|---|---|---|
+| `arca_search` | `(query, top_k=20, corpus=None, filters=None)` | ranked chunks + paper metadata |
+| `arca_answer` | `(query, top_k=20, corpus=None, model=None)` | grounded answer + inline citations |
+| `arca_related_papers` | `(paper_id \| doi, k=10)` | semantic-neighbor papers |
+| `arca_get_paper` | `(paper_id \| doi)` | full metadata + parsed-text path |
+
+## Status
+
+**Scaffold** — 2026-08-01. Core module interfaces defined; embedding/index build and
+MCP serving to be wired against the live corpus next. Deploy target: uicgpu.
+
+See `docs/DESIGN.md` for decisions, defaults, and the build plan.

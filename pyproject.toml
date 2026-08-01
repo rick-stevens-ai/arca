@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arca"
+version = "0.1.0"
+description = "Streamlined corpus RAG exposed to the agent fleet as the MCP service 'arca'."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Rick Stevens (Kukla + Ollie)" }]
+dependencies = [
+    "mcp>=2.0",
+    "openai>=1.30",
+    "faiss-cpu>=1.8.0",
+    "rank-bm25>=0.2.2",
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+gpu = ["faiss-gpu>=1.8.0"]
+qdrant = ["qdrant-client>=1.9"]
+dev = ["pytest>=8.0", "ruff>=0.5"]
+
+[project.scripts]
+arca-server = "arca.server.app:main"
+arca-build-index = "arca.build_index:main"
+
+[tool.setuptools.packages.find]
+include = ["arca*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

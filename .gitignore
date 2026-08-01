@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Arca index artifacts (large, host-local — never commit)
+arca-index/
+*.faiss
+*.jsonl.gz
+
+# Env / secrets
+.env
+*.env
+
+# OS junk
+.DS_Store
+._*
