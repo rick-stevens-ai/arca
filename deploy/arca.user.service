@@ -1,0 +1,26 @@
+[Unit]
+Description=Arca corpus RAG MCP service (user unit — no sudo, survives reboot via linger)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# venv + repo are in the deploy user's home
+Environment=ARCA_VENV=%h/.arca-venv
+Environment=ARCA_HOME=%h/arca
+Environment=ARCA_HOST=0.0.0.0
+Environment=ARCA_PORT=8890
+Environment=ARCA_INDEX_DIR=%h/arca-index
+Environment=ARCA_EMBED_BASE_URL=http://100.86.220.115:44497/v1
+Environment=ARCA_EMBED_API_KEY=stevens
+Environment=ARCA_GEN_BASE_URL=http://100.86.220.115:44497/v1
+Environment=ARCA_GEN_API_KEY=stevens
+# set ARCA_INDEX_NAME once an index is built, e.g.:
+# Environment=ARCA_INDEX_NAME=lucid
+WorkingDirectory=/tmp
+ExecStart=/bin/bash -lc 'exec "$ARCA_VENV/bin/python" -m arca.server ${ARCA_INDEX_NAME:+--index $ARCA_INDEX_NAME}'
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target

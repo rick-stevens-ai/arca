@@ -67,8 +67,31 @@ mcp:
 
 Tools appear as `arca_search`, `arca_answer`, `arca_related_papers`, `arca_get_paper`.
 
-## Supervision (durable)
+## Supervision (durable — survives reboot)
 
-For a restart-surviving service, wrap `launch_uicgpu.sh` in systemd (Linux uicgpu):
-see `deploy/arca.service` (template). Until then, `launch_uicgpu.sh` detaches with
-nohup and kills any prior instance on the port, so re-running it is the recycle path.
+**uicgpu uses a systemd USER unit** (no sudo; stevens has `Linger=yes` so user
+services start at boot and survive logout). This is the installed, verified path:
+
+```bash
+# unit template in repo: deploy/arca.user.service
+ssh uicgpu 'export XDG_RUNTIME_DIR=/run/user/$(id -u)
+  mkdir -p ~/.config/systemd/user
+  cp ~/arca/deploy/arca.user.service ~/.config/systemd/user/arca.service
+  systemctl --user daemon-reload
+  systemctl --user enable --now arca.service'
+```
+
+Manage it:
+
+```bash
+ssh uicgpu 'export XDG_RUNTIME_DIR=/run/user/$(id -u); systemctl --user status arca'
+ssh uicgpu 'export XDG_RUNTIME_DIR=/run/user/$(id -u); systemctl --user restart arca'
+ssh uicgpu 'export XDG_RUNTIME_DIR=/run/user/$(id -u); journalctl --user -u arca -n 50'
+```
+
+`Restart=always` recovers it on crash (verified: `kill -9` → respawned with new PID).
+To bind to a built index, uncomment `Environment=ARCA_INDEX_NAME=<name>` in the unit,
+`daemon-reload`, `restart`.
+
+The system-level `deploy/arca.service` (needs sudo) and `launch_uicgpu.sh` (manual
+`setsid` detach, no supervision) remain as alternatives.
