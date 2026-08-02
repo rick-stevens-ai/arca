@@ -5,6 +5,7 @@ from __future__ import annotations
 import os
 from dataclasses import dataclass, field
 from pathlib import Path
+from typing import Optional
 
 
 def _env(key: str, default: str) -> str:
@@ -22,7 +23,13 @@ class Config:
 
     # --- generation (BYO-LLM, pluggable) ---
     gen_backend: str = _env("ARCA_GEN_BACKEND", "argo")  # argo | openai | vllm | local
-    gen_model: str = _env("ARCA_GEN_MODEL", "gpt4o")
+    gen_model: str = _env("ARCA_GEN_MODEL", "argo:claude-opus-4.8")
+    # None = omit temperature from the request (Argo wrapper 502s on Claude
+    # models when temperature is present). Set ARCA_GEN_TEMPERATURE once the
+    # wrapper is fixed to restore deterministic sampling.
+    gen_temperature: Optional[float] = (
+        float(_env("ARCA_GEN_TEMPERATURE", "")) if _env("ARCA_GEN_TEMPERATURE", "") else None
+    )
     gen_base_url: str = _env("ARCA_GEN_BASE_URL", "http://100.86.220.115:44497/v1")
     gen_api_key: str = _env("ARCA_GEN_API_KEY", "stevens")
 

@@ -61,8 +61,10 @@ class HybridRetriever:
         return [self._bm25_ids[i] for i in ranked[:top_k]]
 
     def search(self, query: str, top_k: int = 20, corpus: Optional[str] = None,
-               filters: Optional[dict] = None) -> list[Hit]:
-        pool = max(top_k * 3, 30)
+               filters: Optional[dict] = None, dedup_by_doc: bool = True) -> list[Hit]:
+        # Over-fetch a larger candidate pool: dedup collapses many chunks per
+        # paper, so we need extra headroom to still fill top_k unique papers.
+        pool = max(top_k * 6, 60)
         qvec = self.embedder.embed_one(query)
         vec_hits = self.store.search(qvec, pool)
         by_id = {h.chunk_id: h for h in vec_hits}
@@ -77,6 +79,9 @@ class HybridRetriever:
                     by_id[cid] = Hit(cid, row["doc_id"], 0.0, row["text"], meta)
         fused = _rrf([vec_ids, bm_ids], self.cfg.rrf_k)
         out: list[Hit] = []
+        seen_docs: set[str] = set()
+        # fused is iterated best-first, so the first chunk seen for a doc_id is
+        # its highest-ranked passage — keep that one, drop the rest when dedup.
         for cid, s in sorted(fused.items(), key=lambda kv: kv[1], reverse=True):
             h = by_id.get(cid)
             if not h:
@@ -85,6 +90,9 @@ class HybridRetriever:
                 continue
             if filters and not all(h.metadata.get(k) == v for k, v in filters.items()):
                 continue
+            if dedup_by_doc and h.doc_id in seen_docs:
+                continue
+            seen_docs.add(h.doc_id)
             h.score = s
             out.append(h)
             if len(out) >= top_k:

@@ -49,15 +49,21 @@ class Generator:
         prompt = f"Context passages:\n\n{context}\n\nQuestion: {query}\n\nAnswer (cite [doc_id]):"
         try:
             client = self._client_lazy()
-            resp = client.chat.completions.create(
+            # NOTE: the Argo wrapper currently 502s on Claude models whenever an
+            # explicit `temperature` is sent ("choices[0].message does not match
+            # any variant"). Omit it — RAG answers are grounded in passages, so
+            # provider-default sampling is fine. Re-add once the wrapper is fixed.
+            kwargs = dict(
                 model=model,
                 messages=[
                     {"role": "system", "content": _SYSTEM},
                     {"role": "user", "content": prompt},
                 ],
-                temperature=0.0,
                 max_tokens=1500,
             )
+            if self.cfg.gen_temperature is not None:
+                kwargs["temperature"] = self.cfg.gen_temperature
+            resp = client.chat.completions.create(**kwargs)
             text = resp.choices[0].message.content or ""
         except Exception as exc:  # generation is best-effort; retrieval still returned
             text = f"[generation unavailable: {exc}] Returning retrieved passages only."
