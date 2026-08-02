@@ -125,3 +125,52 @@ def load_scout(cfg: Config = DEFAULT, limit: int | None = None) -> Iterator[tupl
 
 
 LOADERS = {"osti": load_osti, "lucid": load_lucid, "scout": load_scout}
+
+
+def _title_from_mmd(text: str, fallback: str) -> str:
+    """Best-effort title: first markdown heading or first non-empty line."""
+    for line in text.splitlines():
+        s = line.strip().lstrip("#").strip()
+        if len(s) >= 8:
+            return s[:300]
+    return fallback
+
+
+def load_x100(cfg: Config = DEFAULT, limit: int | None = None) -> Iterator[tuple[Document, str]]:
+    """Stream X-100 pilot papers from ~/Dropbox/XFER/X-100/<SET>/*.mmd.
+
+    Five domain sets: BVBRC-100, LUCID-100, OSTI-100, PDE-100, QC-100.
+    Files are .mmd (Nougat). BVBRC/OSTI are SHA-named; LUCID is slug-named.
+    doc_id = x100:<set>:<stem>; corpus_tag carries the domain so retrieval can
+    filter/attribute by set. PDE/QC .mmd appear here once parsed on chiatta00.
+    """
+    root = Path(cfg.x100_root)
+    if not root.exists():
+        return
+    sets = ["BVBRC-100", "LUCID-100", "OSTI-100", "PDE-100", "QC-100"]
+    n = 0
+    for setname in sets:
+        d = root / setname
+        if not d.is_dir():
+            continue
+        for p in sorted(d.glob("*.mmd")):
+            text = _read_text(str(p))
+            if not text.strip():
+                continue
+            stem = p.stem
+            yield (
+                Document(
+                    doc_id=f"x100:{setname}:{stem}",
+                    corpus="x100",
+                    title=_title_from_mmd(text, stem),
+                    path=str(p),
+                    metadata={"corpus": "x100", "set": setname, "stem": stem},
+                ),
+                text,
+            )
+            n += 1
+            if limit and n >= limit:
+                return
+
+
+LOADERS["x100"] = load_x100

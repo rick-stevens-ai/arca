@@ -51,6 +51,7 @@ class Config:
         "ARCA_LUCID_SQLITE", str(Path.home() / "Dropbox/XFER/piago-lucid-site/lucid.sqlite")
     )
     scout_root: str = _env("ARCA_SCOUT_ROOT", "/Volumes/SG-1-8TB/scout-corpus")
+    x100_root: str = _env("ARCA_X100_ROOT", str(Path.home() / "Dropbox/XFER/X-100"))
 
     def index_path(self, name: str) -> Path:
         # guard against an empty ARCA_INDEX_DIR (stripped env) → never mkdir ''
