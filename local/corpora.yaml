@@ -9,3 +9,18 @@ corpora:
     source_dir: /Users/stevens/Dropbox/PDF-Flagellum-ATP
     years: meta/flagellum_years.json
     review_labels: meta/flagellum_review_labels.json
+
+  schur_ramsey_qa:
+    title: "Schur Numbers, Ramsey Theory & Quantum Algorithms"
+    source_dir: /Volumes/SG-1-8TB/corpora/schur_ramsey_qa/corpus
+    years: meta/schur_ramsey_qa_years.json
+
+  giant_bacteria:
+    title: "Giant Bacteria"
+    source_dir: /Volumes/SG-1-8TB/corpora/giant_bacteria/corpus
+    years: meta/giant_bacteria_years.json
+
+  nano_bacteria_archaea:
+    title: "Nanobacteria & Nanoarchaea"
+    source_dir: /Volumes/SG-1-8TB/corpora/nano_bacteria_archaea/corpus
+    years: meta/nano_bacteria_archaea_years.json
