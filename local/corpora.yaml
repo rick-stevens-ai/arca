@@ -1,0 +1,11 @@
+# corpus-rag corpus registry
+# One entry per topic. `source_dir` holds the parsed .md/.mmd (and usually the PDFs).
+# `years` / `review_labels` are optional metadata JSONs (paper_id -> value); omit if absent.
+# Collection name in ChromaDB = "corpus_<name>". Embedding dim is shared (3072).
+
+corpora:
+  flagellum:
+    title: "Bacterial flagellum & ATP synthase literature"
+    source_dir: /Users/stevens/Dropbox/PDF-Flagellum-ATP
+    years: meta/flagellum_years.json
+    review_labels: meta/flagellum_review_labels.json

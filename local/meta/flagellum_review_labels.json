@@ -1,0 +1,2066 @@
+{
+  "Bharier-1971": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Biondi-2006": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "BlancoRomero-2018": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Bland-1970": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Bleves-2002": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Block-1983": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Block-1991": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Blomqvist-1997": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Boeck-1921": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Boles-2002": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Bonifield-2000": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Bornstein-1991": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Boyd-2001": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Brenner-1991": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Brown-2001": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Brown-2002": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Brown-2005": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Brunner-1980": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Bryan-1984": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Butler-2005": {
+    "type": "review",
+    "conf": 1.0
+  },
+  "Campbell-1966": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Canals-2006": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Casalta-1989": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Chaban-2018": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Chain-2005": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "1-s2.0-000527289390063L-main": {
+    "type": "review",
+    "conf": 0.98
+  },
+  "Abel-2013": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Abram-1970": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Aguero-Rosenfeld-1990": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Akerley-1992": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Aldridge-1999": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Aldridge-2003": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Aldridge-2006": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Alley-1991": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Alley-1992": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Alley-2001": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Alm-1993": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Amati-2004": {
+    "type": "research",
+    "conf": 0.97
+  },
+  "Anderson-1989": {
+    "type": "research",
+    "conf": 0.97
+  },
+  "Anderson-1997": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Anderson-2000": {
+    "type": "research",
+    "conf": 0.97
+  },
+  "Andrade-2002": {
+    "type": "research",
+    "conf": 0.96
+  },
+  "Arkhipov-2006": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Armitage-2020": {
+    "type": "review",
+    "conf": 0.99
+  },
+  "Arora-2000": {
+    "type": "research",
+    "conf": 0.97
+  },
+  "Asai-1997": {
+    "type": "research",
+    "conf": 0.97
+  },
+  "Aschtgen-2019": {
+    "type": "review",
+    "conf": 0.99
+  },
+  "Assche-2015": {
+    "type": "review",
+    "conf": 0.99
+  },
+  "Atkinson-2006": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Aufurth-1998": {
+    "type": "research",
+    "conf": 0.96
+  },
+  "DeRosier-2006": {
+    "type": "review",
+    "conf": 0.9
+  },
+  "Delory-2006": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Delrue-2005": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Dewhirst-2005": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Deziel-2001": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Diener-1993": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Dietrich-2001": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Dimmitt-1970": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Dingwall-1990": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Dingwall-1992": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Donato-1998": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Donato-1999": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Dons-2004": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Driks-1990": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Dugar-2016": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Dunn-1989": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Echazarreta-2019": {
+    "type": "review",
+    "conf": 0.9
+  },
+  "Ely-1986": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Ely-1989": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Engel-1999": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Entcheva-Dimitrov-2004": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Erhardt-2014": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Estacio-1998": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Evans-2006": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Fadouloglou-2004": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Auvray-2001": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Auvray-2002": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Baban-2013": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Badger-2006": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Bahrani-1991": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Bai-2014": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Bangsborg-1991": {
+    "type": "research",
+    "conf": 0.85
+  },
+  "Bardy-2002": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Bastin-1999": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Bauer-2001": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Baumann-1971": {
+    "type": "research",
+    "conf": 0.85
+  },
+  "Baynham-2006": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Belas-1986": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Belas-1994": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Bemis-1985": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Bender-1989": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Bennett-2001": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Bentez-2022": {
+    "type": "review",
+    "conf": 1.0
+  },
+  "Berg-1995": {
+    "type": "review",
+    "conf": 1.0
+  },
+  "Berg-2005": {
+    "type": "review",
+    "conf": 0.7
+  },
+  "Berleman-2005": {
+    "type": "research",
+    "conf": 0.85
+  },
+  "Berry-1993": {
+    "type": "research",
+    "conf": 0.8
+  },
+  "Berry-1997": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Bertin-1994": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Beyhan-2006": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Chattopadhyay-2006": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Chen-1986": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Chilcott-2000": {
+    "type": "review",
+    "conf": 0.95
+  },
+  "Chinchilla-2006": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Chua-2003": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Claret-2003": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Clyne-2000": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Cohen-Bazire-1967": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Colegio-2001": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Colland-2001": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Collins-1976": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Coquet-2002": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Cordes-2003": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Correa-2000": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Correa-2004": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Correa-2005": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Couto-2016": {
+    "type": "review",
+    "conf": 0.95
+  },
+  "D'Aoust-1971": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Dailey-2002": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Daneshvar-1998": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Darzins-1993": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Das-1998": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Das-2018": {
+    "type": "review",
+    "conf": 0.8
+  },
+  "Dasgupta-2000": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Dasgupta-2003": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Heuner-1999": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Heuner-2002": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Heusipp-2001": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Hickman-1982": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Higa-2013": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Hodgson-1984": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Homma-1984": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Homma-1985": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Homma-1986": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Homma-1987": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "House-2001": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Hranitzky-1980": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Hu-2023": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Huguenel-1984": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Huitema-2006": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Hynonen-2002": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Ikeda-1984": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Ikeda-1987": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Ikeda-1993": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Inglis-2003": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Ireland-2002": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Iriarte-1995": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Jain-2014": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Janssen-1997": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Jaques-1999": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Fan-1996": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Fan-1997": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Fedorov-1984": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Felix-1999": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Ferrandez-2002": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Ferris-2005": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Finnan-2004": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Fisher-1997": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Fitzgerald-2014": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Flattery-O'Brien-1997": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Fleiszig-2001": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Flynn-2004": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Francez-Charlot-2003": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Francis-1992": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Franklin-1996": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Frasch-2022": {
+    "type": "review",
+    "conf": 0.99
+  },
+  "Fraser-1999": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Fretin-2005": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Fuerst-1988": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Fukuda-1981": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Furness-1997": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Furuno-1999": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Garrett-1999": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Gavin-2002": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Gavin-2003": {
+    "type": "research",
+    "conf": 0.99
+  },
+  "Lambert-2006": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Lapidus-1988": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Lauriano-2004": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Lawler-2006": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Lee-2004": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Levi-2006": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Li-2001": {
+    "type": "research",
+    "conf": 0.97
+  },
+  "Limberger-1986": {
+    "type": "research",
+    "conf": 0.97
+  },
+  "Limberger-1992": {
+    "type": "research",
+    "conf": 0.97
+  },
+  "Limberger-1994": {
+    "type": "research",
+    "conf": 0.97
+  },
+  "Lin-2018": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Lloyd-1996": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Loewy-1987": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Lowder-2005": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Lu-2005": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Lucas-2000": {
+    "type": "research",
+    "conf": 0.97
+  },
+  "Luo-2023": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Macnab-1999": {
+    "type": "review",
+    "conf": 0.99
+  },
+  "Maddock-1993": {
+    "type": "review",
+    "conf": 0.99
+  },
+  "Magariyama-1995": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Magariyama-2001": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Magariyama-2005": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Mahenthiralingam-1995": {
+    "type": "research",
+    "conf": 0.97
+  },
+  "Majander-2005": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Maki-Yonekura-2003": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Ge-1997": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Gebremichael-2006": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Ghelardi-2002": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Ghosh-2004": {
+    "type": "review",
+    "conf": 0.9
+  },
+  "Ghssein-2025": {
+    "type": "review",
+    "conf": 1.0
+  },
+  "Giacomucci-2019": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Gill-1982": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Givens-2001": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Glauert-1963": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Gober-1995": {
+    "type": "review",
+    "conf": 0.9
+  },
+  "Gonzalez-Pedrajo-1997": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Grunenfelder-2003": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Gryllos-2001": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Gupta-1994": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Gygi-1997": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Hahnenberger-1988": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Hansen-1988": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Hansen-1989": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Harper-2002": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Harris-1987": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Hasegawa-2003": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "He-2006": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Hebert-1984": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Herzberg-2006": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Heuner-1995": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Jaques-2006": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Jasuja-1999": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Jenal-1996": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Jiang-1997": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Jin-2001": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Johnson-1979": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Johnson-1983": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Johnson-1984": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Jones-1971": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Jones-1976": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Jones-1987": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Jones-1990": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Josenhans-2000": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Jwang-1995": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Kagawa-1984": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Kang-1994": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Karlinsey-1997": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Karlinsey-1998": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Karlinsey-2000": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Karlsson-1990": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Kashefi-2002": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Kawagishi-1997": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Kawamoto-2013": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Kearns-2005": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Kelly-Wintenberg-1990": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Khambaty-1992": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Khan-1990": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Khan-1991": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Khan-1993": {
+    "type": "review",
+    "conf": 0.99
+  },
+  "Khan-2004": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Kieboom-2001": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Kim-2000": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Kim-2003": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Kirov-2002": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Kirov-2003": {
+    "type": "review",
+    "conf": 0.99
+  },
+  "Kirov-2004": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Klose-1998": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Kobayashi-2003": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Kodama-2004": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Kogure-1998": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Kojima-1999": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Kubori-1997": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Kupper-1989": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Kurn-1974": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Kutsukake-1994": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Kutsukake-1997": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Kuwajima-1988": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Kuwajima-1989": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Lagenaur-1978": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Lai-2000": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Mangan-1995": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Mangan-1999": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Marques-1997": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Marshall-1999": {
+    "type": "research",
+    "conf": 0.85
+  },
+  "Martin-1989": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Masuzawa-1996": {
+    "type": "research",
+    "conf": 0.7
+  },
+  "Mathiesen-1996": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Mathiesen-1998": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Matsui-2003": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Matsuyama-1992": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Matsuyama-1995": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "McCarter-1989": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "McCarter-1990": {
+    "type": "review",
+    "conf": 0.98
+  },
+  "McCarter-1994": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "McCarter-1995": {
+    "type": "research",
+    "conf": 0.8
+  },
+  "McCarter-2001": {
+    "type": "review",
+    "conf": 0.95
+  },
+  "McClain-2002": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "McCoy-1975": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "McDougall-1997": {
+    "type": "research",
+    "conf": 0.85
+  },
+  "McGroarty-1973": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "McSweegan-1986": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Merino-1990": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Merino-2003": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Merino-2006": {
+    "type": "review",
+    "conf": 0.98
+  },
+  "Merkx-Jacques-2004": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Muir-2004": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Muir-2005": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Muller-1992": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Nachamkin-1993": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Nagy-2006": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Nambu-2006": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Navarrete-2019": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Neuman-1999": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Neville-2013": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Newton-1972": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Nishikino-2018": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Noguchi-1926": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Norqvist-1993": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Notti-2015": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Novikova-2000": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Nuijten-1989": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Nuijten-1990": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "O'Neil-2006": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "O'Neill-1989": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Odugbemi-1988": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Oene-2017": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Ogunniyi-1997": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Ohnishi-1987": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Ohnishi-1994": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Ohta-1982": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Merriam-1997": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Miake-1995": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Milhausen-1982": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Miller-2018": {
+    "type": "review",
+    "conf": 0.9
+  },
+  "Millikan-2003": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Millikan-2004": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Milton-1996": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Minamino-1999": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Minamino-2006": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Minamino-2011": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Minamino-2016": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Minnich-1988": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Mirel-1994": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Mnatsakanyan-2019": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Moens-1995": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Moens-1996": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Mohr-1998": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Molle-2003": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Monday-2004": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Morehouse-2005": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Mork-1993": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Morooka-1983": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Mota-2005": {
+    "type": "review",
+    "conf": 0.99
+  },
+  "Muir-2001": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Muir-2002": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Power-1992": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Prouty-2001": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Pruckler-1995": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Purcell-1997": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Rabaan-2001": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Radomska-2017": {
+    "type": "research",
+    "conf": 0.7
+  },
+  "Ramakrishnan-1994": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Ramamurthy-2014": {
+    "type": "review",
+    "conf": 1.0
+  },
+  "Ramamurthy-2020": {
+    "type": "review",
+    "conf": 0.9
+  },
+  "Ramia-1993": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Ravid-1986": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Reid-2006": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Riccardi-2023": {
+    "type": "review",
+    "conf": 0.95
+  },
+  "Roberts-1966": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Roessler-2002": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Rogalski-1982": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Rohde-1999": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Rossez-2015": {
+    "type": "review",
+    "conf": 0.9
+  },
+  "Rouanet-2004": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Rubires-1998": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Rupp-2001": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Ryjenkov-2006": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Sadziene-1991": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Saijo-Hamano-2005": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Saito-1998": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Schade-1967": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Schaubach-1999": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Scherer-1993": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Schmidt-Eisenlohr-1999": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Schmitt-1974": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Schmitt-1994": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Schmitt-1996": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Schniederberend-2019": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Schoenlein-1989": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Scholl-1980": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Schuster-1994": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Schwessinger-2011": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Schwessinger-2012": {
+    "type": "review",
+    "conf": 0.98
+  },
+  "Scott-2001": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Secchi-2020": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Senesi-2004": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Seshadri-2006": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Sessitsch-2005": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Seville-1993": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Sfondrini-2006": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Shah-2000": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Shaikh-2005": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Shapiro-1973": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Shapiro-1995": {
+    "type": "review",
+    "conf": 0.9
+  },
+  "Shi-1992": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Ohta-1984": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Ohta-1991": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Oikonomou-2017": {
+    "type": "review",
+    "conf": 0.99
+  },
+  "Okabe-2001": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Okabe-2005": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Okazaki-1993": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Okuda-2003": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Ong-1990": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Onoue-2019": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Ormonde-2000": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Ozin-2003": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "PIIS1097276523003246": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Packer-1993": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Page-2002": {
+    "type": "review",
+    "conf": 0.98
+  },
+  "Pallesen-1989": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Park-2005": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Patel-King-1997": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Patteson-2015": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Paul-2006": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Pavlovskis-1991": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Pedersen-1982": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Pedersen-1989": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Pereg Gerk-2000": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Poggio-2001": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Polen-2003": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Shi-1993": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Shi-2002": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Shinoda-1977": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Silva-2011": {
+    "type": "review",
+    "conf": 0.99
+  },
+  "Silverman-1972": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Smit-1987": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Sobti-2023": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Sommer-1988": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Sommer-1989": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Song-2004": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Sosinsky-1992": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Soutourina-1999": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Sowa-2008-b": {
+    "type": "review",
+    "conf": 0.99
+  },
+  "Sowa-2008-c": {
+    "type": "review",
+    "conf": 0.85
+  },
+  "Sowa-2008-d": {
+    "type": "research",
+    "conf": 0.85
+  },
+  "Sowa-2008": {
+    "type": "review",
+    "conf": 0.9
+  },
+  "Spohn-1999": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Stahl-1983": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Stahlberg-1995": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Steenhoudt-2000": {
+    "type": "review",
+    "conf": 0.99
+  },
+  "Stegmann-2017": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Stephens-1995": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Stephens-1996": {
+    "type": "review",
+    "conf": 0.9
+  },
+  "Stephens-1997": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Stewart-2003": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Yamamoto-1996": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Yang-1977": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Yang-2019": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Yao-2004": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Yokoseki-1996": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Young-1999": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Yu-1992": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Zhao-1996": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Zhou-2015": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Zhu-2013": {
+    "type": "review",
+    "conf": 0.95
+  },
+  "Zhuang-1995": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Zuberi-1990": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Zuerner-1994": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Zusman-2002": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "bst0410001": {
+    "type": "review",
+    "conf": 0.95
+  },
+  "vilaCaldern-2021": {
+    "type": "review",
+    "conf": 0.95
+  },
+  "Suzuki-2002": {
+    "type": "research",
+    "conf": 0.7
+  },
+  "Taguchi-2006": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Tampakaki-2004": {
+    "type": "review",
+    "conf": 0.95
+  },
+  "Tang-2004": {
+    "type": "research",
+    "conf": 0.7
+  },
+  "Tanskanen-2000": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Tart-2005": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Tart-2006": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Tendeng-2000": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "The EMBO Journal - 2023 - Valdebenito": {
+    "type": "review",
+    "conf": 0.9
+  },
+  "The mitochondrial Hsp70 controls the assembly of the F1FO-ATP synthase": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Thepot-2000": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Thomas-2001": {
+    "type": "review",
+    "conf": 0.99
+  },
+  "Thomas-2002": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Thomas-2004": {
+    "type": "research",
+    "conf": 0.98
+  },
+  "Titz-2006": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Tomich-2002": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Tomoyasu-2002": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Tomoyasu-2003": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Trueba-1992": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Tung-2017": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Uezumi-1992": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Vaituzis-1969": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Van Voorhis-1993": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Vary-1973": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Viollier-2003": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Vizsnyiczai-2020": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Vogler-1991": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Wallich-1990": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Walz-2000": {
+    "type": "research",
+    "conf": 0.85
+  },
+  "Wang-2002": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Wang-2003": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Wang-2005": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Wang-2024": {
+    "type": "research",
+    "conf": 0.95
+  },
+  "Wanner-1986": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Warren-2005": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Watnick-1999": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Watnick-2001": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Wei-2001": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Wenman-1985": {
+    "type": "research",
+    "conf": 0.85
+  },
+  "Werhane-2004": {
+    "type": "research",
+    "conf": 0.85
+  },
+  "Wilharm-2004": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Winet-1976": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Wosten-2004": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Wu-1995": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Wu-1997": {
+    "type": "review",
+    "conf": 0.98
+  },
+  "Wu-1998": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Wu-2011": {
+    "type": "research",
+    "conf": 0.85
+  },
+  "Xu-1989": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Yakushi-2004": {
+    "type": "research",
+    "conf": 0.9
+  },
+  "Yakushi-2006": {
+    "type": "research",
+    "conf": 0.9
+  }
+}

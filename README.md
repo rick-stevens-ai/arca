@@ -5,10 +5,34 @@ scientific corpora (OSTI + SCOUT + LUCID), exposed to every agent and model in t
 fleet **as an MCP service** named `arca`.
 
 It is a lean re-implementation of the HiPerRAG pattern (distllm retriever + BYO-LLM
-generation) without the multi-thousand-GPU HPC machinery — sized to run as a single
-always-on service on **uicgpu** and reachable over Tailscale.
+generation) without the multi-thousand-GPU HPC machinery.
 
 > One corpus endpoint the whole agent family can hit on demand.
+
+## Two deployment options
+
+Arca ships **two interchangeable ways to run the same corpus-RAG contract**
+(*search → answer → related_papers → get_paper*, over MCP). Pick the one that fits
+where you want the index to live:
+
+| | **Server / remote** (default) | **Local** |
+|---|---|---|
+| Where | always-on service on **uicgpu**, reachable over Tailscale | a single machine (laptop / workstation) |
+| Vector store | FAISS (+ BM25 hybrid, RRF fusion) | ChromaDB, one collection per corpus |
+| Transport | MCP over Streamable HTTP | MCP over stdio |
+| Embeddings | `embedding-3-small`, **1536-dim** locked | `text-embedding-3-large`, **3072-dim** locked |
+| Multi-corpus | corpus filter over one index | one collection per topic, registry-driven |
+| Best for | shared, whole-fleet endpoint | private / offline / single-user, no remote DB |
+| Code | `arca/` (this package) — see below | [`local/`](local/) — see [`local/README.md`](local/README.md) |
+
+Both expose the same conceptual tools, so an agent's workflow is identical either
+way; only the tool prefix differs (`arca_*` for the server, `corpus_*` for the
+local service). The two indexes use different embedding dimensions and are not
+interchangeable at the file level — choose the deployment that matches your
+endpoint.
+
+The rest of this document describes the **server** deployment. For the **local**
+deployment (ChromaDB, stdio, single machine) see [`local/README.md`](local/README.md).
 
 ## Why
 
@@ -54,6 +78,7 @@ citations), `related_papers`, and `get_paper`, over MCP, from anywhere on the ta
 | `arca/retrieve/` | Hybrid retriever: vector + BM25 + metadata filter, RRF fusion |
 | `arca/generate/` | BYO-LLM grounded synthesis (uicgpu-local / Argo / CELS) |
 | `arca/server/` | **The `arca` MCP service** — FastMCP app exposing the tools |
+| `local/` | **Local deployment** — ChromaDB + stdio MCP, single machine (see `local/README.md`) |
 | `deploy/` | uicgpu launch + supervision (nohup/systemd), Tailscale exposure |
 | `tests/` | Unit + smoke tests |
 | `docs/DESIGN.md` | Full design + decisions log |

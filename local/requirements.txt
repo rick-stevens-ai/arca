@@ -1,0 +1,8 @@
+# Arca — local (ChromaDB) deployment
+# Self-contained single-machine RAG. No remote DB, no HPC.
+# Known-good pins from the working m1 install.
+chromadb==1.5.9
+mcp==1.29.1
+openai==3.6.0
+tiktoken==0.14.0
+PyYAML==6.0.3
