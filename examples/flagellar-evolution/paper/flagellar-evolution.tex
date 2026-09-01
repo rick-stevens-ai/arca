@@ -1,0 +1,207 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{KuklaInk}{HTML}{1B2A4A}
+\definecolor{KuklaAccent}{HTML}{8C4F2B}
+\definecolor{KuklaMath}{HTML}{FAF6EE}
+\definecolor{KuklaSky}{HTML}{D9E4F5}
+
+\titleformat{\section}{\Large\bfseries\color{KuklaInk}}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\large\bfseries\color{KuklaAccent}}{\thesubsection}{0.5em}{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{KuklaInk}\textbf{KUKLA} --- Flagellar Evolution: Open Questions}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{KuklaInk}\leaders\hrule height \headrulewidth\hfill}}
+
+\newtcolorbox{keybox}[1]{
+  enhanced, breakable,
+  colback=KuklaSky, colframe=KuklaInk,
+  fonttitle=\bfseries\color{white}, coltitle=white,
+  attach boxed title to top left={xshift=10pt,yshift=-8pt},
+  boxed title style={colback=KuklaInk,sharp corners},
+  title={#1}, arc=2mm, boxrule=0.8pt,
+}
+\newtcolorbox{caveatbox}{
+  enhanced, breakable,
+  colback=KuklaMath, colframe=KuklaAccent,
+  fonttitle=\bfseries\color{KuklaAccent},
+  title={Provenance \& honesty note}, arc=1mm, boxrule=0.5pt,
+}
+
+\title{\color{KuklaInk}\Huge\textbf{Open Questions in the Evolution of the Bacterial Flagellum}\\[6pt]
+  \large\color{KuklaAccent}A corpus-grounded synthesis}
+\author{Kukla \\ \small Hermes Agent / M1 Mac mini}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent The bacterial flagellum is among the most-studied molecular machines, yet its evolutionary
+history remains only partially resolved. Decades of structural, genetic, and comparative work have
+converged on a clear picture of \emph{what} the flagellum is and \emph{how} it works, while leaving
+several \emph{how-did-it-get-here} questions genuinely open. This note frames four such questions that
+the underlying literature corpus itself surfaces---the direction of evolution between the flagellar
+export apparatus and the type~III secretion system (T3SS), the origin and diversification of the
+ion-powered motor, the relationship between the bacterial flagellum and the archaeal archaellum, and
+the reconstruction of a minimal ancestral machine---and summarizes the specific evidence and the
+specific disagreements around each. All claims are drawn from a 516-paper flagellum/ATP corpus and
+retrieved via a local retrieval-augmented-generation service.
+\end{abstract}
+
+\tableofcontents
+\vspace{1em}
+
+\section{Introduction}
+The flagellum is a supramolecular motility machine built from roughly 30 different proteins, organized
+into a basal-body rotary motor, a hook acting as a universal joint, and a helical filament that serves
+as a propeller \cite{Sowa-2008-b}. Estimates of the parts count vary with how one counts:
+at least 40 genes are involved, with at least 24 contributing proteins to the final structure
+\cite{DeRosier-2006}, alongside an earlier figure of $\sim$20 structural proteins plus
+$\sim$30 more for construction, function, and maintenance \cite{Shapiro-1995}. This
+complexity---a self-assembling, ion-powered, reversible rotary motor---is precisely what makes its
+evolution scientifically interesting.
+
+Importantly, the mechanistic maturity of the field does not translate into a settled evolutionary
+account. The corpus is dense with structure and mechanism and comparatively thin on explicit
+macro-evolutionary modeling; where it does address origins, it repeatedly surfaces the same handful of
+unresolved questions. We treat those as the paper's organizing spine.
+
+\section{Which came first --- the flagellum or the T3SS?}
+The single most-developed evolutionary thread in the corpus is the deep relationship between the
+flagellar export apparatus and the virulence-associated T3SS. The two are ``evolutionarily and
+functionally related'' \cite{Erhardt-2014}: roughly half of the $\sim$20--25 T3SS proteins
+are conserved across type~III systems, and most are also similar in sequence to basal-body proteins of
+the flagellum \cite{Ghosh-2004}; up to eight flagellar-assembly gene products are
+homologous to conserved T3SS components \cite{Stephens-1996}. Macnab put it most
+strongly---the flagellar pathway \emph{is} a type~III pathway, ``differing only in the nature of its
+export substrates and in the fact that it operates via a working organelle of propulsion''
+\cite{Macnab-1999}.
+
+\begin{keybox}{Consensus vs.\ the live disagreement}
+The preponderance of evidence favors the flagellum as the \textbf{ancestral} system, with the
+virulence T3SS (Type~IIIb) derived from it: flagella are ancient and predate metazoan/plant hosts
+\cite{Stephens-1996,Macnab-1999}; flagellar (Type~IIIa) homologs are more similar to
+one another than to virulence components \cite{Stephens-1996}; and Type~IIIb systems are
+patchily distributed on plasmids/pathogenicity islands, implying later horizontal transfer
+\cite{Stephens-1996}. \emph{But} a dissenting analysis holds the T3SS is as ancient as the
+flagellar apparatus and that the two share a \textbf{common ancestor} rather than one descending from
+the other \cite{Ghosh-2004}---a genuine topological disagreement the corpus cannot yet
+adjudicate.
+\end{keybox}
+
+\section{How did the ion-powered motor originate and diversify?}
+The torque-generating core is strikingly conserved: five proteins---the stator (MotA/MotB or homologs)
+and rotor proteins FliG, FliM, FliN---recur across motor types, and the FliG C-terminal domain is
+largely interchangeable between species \cite{Yakushi-2006}. Chimeric motors that mix
+proton- and sodium-type components function \cite{Sowa-2008-c}, arguing for a common
+ancestral mechanism that diversified mainly in ion coupling.
+
+\subsection{A concrete open puzzle: the selectivity filter}
+A single aspartate in MotB/PomB (D32 in \emph{E.\ coli} MotB \cite{Sowa-2008}; D24 in PomB
+\cite{Hu-2023}) is essential and universally conserved across stator families---which
+means it \emph{cannot} distinguish a sodium motor from a proton motor \cite{Hu-2023}.
+Recent cryo-EM of the \emph{Vibrio} PomAB complex located Na\textsuperscript{+} selectivity partly in
+three threonines of PomA (T158/T185/T186), conserved in all sodium stators \cite{Hu-2023},
+revising the older view that the B subunit alone sets specificity. How selectivity is encoded---and
+therefore how it \emph{changes} over evolution---is an active, unfinished structural problem.
+
+\subsection{Diversification is real}
+Stator systems span single-ion (MotAB/PomAB), multiple-stator genomes ($\ge$65 species carry two or
+more stators; \emph{V.\ alginolyticus} runs Na\textsuperscript{+} PomAB polar and
+H\textsuperscript{+} MotAB lateral systems), and genuinely dual-ion stators (\emph{Bacillus clausii}
+MotAB couples H\textsuperscript{+} or Na\textsuperscript{+}; \emph{B.\ alcalophilus} MotPS couples
+Na\textsuperscript{+}/K\textsuperscript{+}/Rb\textsuperscript{+}) \cite{Sowa-2008}. Some
+lineages bolt on extra parts---the \emph{Vibrio} Na\textsuperscript{+} motor requires outer-membrane
+MotX/MotY that engineered hybrids do without \cite{Yakushi-2006,Jaques-1999}. The open
+question is the \emph{order and drivers} of this diversification: which coupling ion is ancestral, and
+how many times has switching occurred? An energy-transduction mechanism shared across export and
+rotation further constrains plausible intermediates \cite{Minamino-2011}.
+
+\section{Flagellum vs.\ archaellum --- one origin or two?}
+Comparative data force a sharp conclusion. The archaeal motility organelle (archaellum) does the same
+job by entirely different means: archaeal genomes contain \textbf{no homologs} of bacterial flagellins,
+rod, hook, ring, switch, or Mot proteins \cite{Thomas-2001}. Archaeal filaments are thinner
+(10--14~nm vs.\ $\sim$20~nm), built from multiple glycosylated flagellins made with cleaved leader
+peptides, and appear to lack the central assembly channel that defines bacterial flagellar growth
+\cite{Thomas-2001,Thomas-2002}. Instead, archaeal flagellins resemble \textbf{type~IV
+pilins}, and archaellum assembly factors resemble type~IV pilus NTPases and membrane proteins
+\cite{Thomas-2002}.
+
+The corpus's own reading is that flagellar biogenesis ``may have evolved independently in these two
+domains of life'' \cite{Thomas-2002}---convergent evolution of rotary swimming from
+unrelated parts. A telling wrinkle: archaea retain bacterial-like chemotaxis genes
+(\emph{cheA/cheW/cheY}) bolted onto a non-homologous motor \cite{Thomas-2001}, so the
+\emph{control system} is shared while the \emph{machine} is not.
+
+\section{Can we reconstruct a minimal ancestral machine?}
+The T3SS thread offers the corpus's clearest stab at a stepwise origin. The observation that ATPase
+activity is \emph{dispensable} for type~III export \cite{Erhardt-2014} reframes the classic
+``flagellum from a proto-F\textsubscript{o}F\textsubscript{1} ATP synthase'' story: rather than ATP
+hydrolysis being foundational, a \textbf{proton-powered primordial export system} may have come first,
+with a proto-F\textsubscript{1}-ATPase \emph{added later} to facilitate export
+\cite{Erhardt-2014}. That inverts the intuitive order (energy module first) and suggests a
+plausible ancestral intermediate---a secretion pore predating both motor and ATPase. But the corpus
+carries no full ancestral-state reconstruction, and is candid that it lacks substantive treatment of
+the irreducible-complexity debate, pointing outward to work not in the set \cite{Sowa-2008-b}.
+The open question is empirical and tractable: what is the smallest functional sub-assembly that is both
+selectable and on a credible path to the modern motor?
+
+\section{Synthesis: a conserved core, an unconserved history}
+Across all four questions a single pattern recurs---a \textbf{strongly conserved functional core}
+(rotor--stator electrostatics \cite{Berry-1993,Yakushi-2006}, the export apparatus, the
+three-part body plan) surrounded by \textbf{lineage-specific elaboration} (divergent peripheral motor
+structures seen by electron cryotomography \cite{Sowa-2008-b}, extra stator parts,
+alternate ion couplings). The machine is conserved; its \emph{history} is not agreed. The productive
+open questions are less ``could this evolve?'' and more ``in what order, powered by which ion, and from
+which pre-existing pore?''---answerable with phylogenomics and ancestral-sequence reconstruction, methods
+largely outside the current corpus, which defines the most useful direction for augmenting it.
+
+\begin{caveatbox}
+This synthesis was generated by retrieving passages from a 516-paper flagellum/ATP corpus via a local
+retrieval-augmented-generation service and synthesizing with an LLM; every claim traces to a retrieved
+passage. The reference list was reconstructed by extracting bibliographic metadata directly from the
+parsed source PDFs. Two references warrant note: the corpus's internal key \texttt{Sowa-2008} in fact
+resolves to Biquet-Bisquert et al.\ (2021), and \texttt{Sowa-2008-b} to Terashima et al.\ (2017)---the
+automated author-year keying during corpus assembly produced collisions that have been corrected here
+against the actual PDFs. No bibliographic detail was invented; fields that could not be verified from a
+source were left blank.
+\end{caveatbox}
+
+\begin{thebibliography}{99}
+\small
+\bibitem{Armitage-2020} Armitage JP, Berry RM. \emph{Assembly and Dynamics of the Bacterial Flagellum}. Annual Review of Microbiology 74:181–200 (2020).
+\bibitem{Berry-1993} Berry RM. \emph{Torque and switching in the bacterial flagellar motor. An electrostatic model}. Biophysical Journal 64:961–973 (1993).
+\bibitem{Sowa-2008} Biquet-Bisquert A, Labesse G, Pedaci F, Nord AL. \emph{The Dynamic Ion Motive Force Powering the Bacterial Flagellar Motor}. Frontiers in Microbiology 12:659464 (2021).
+\bibitem{DeRosier-2006} DeRosier D. \emph{Bacterial Flagellum: Visualizing the Complete Machine In Situ}. Current Biology 16:R928–R930 (2006).
+\bibitem{Erhardt-2014} Erhardt M, Mertens ME, Fabiani FD, Hughes KT. \emph{ATPase-Independent Type-III Protein Secretion in Salmonella enterica}. PLoS Genetics 10:e1004800 (2014).
+\bibitem{Ghosh-2004} Ghosh P. \emph{Process of Protein Transport by the Type III Secretion System}. Microbiology and Molecular Biology Reviews 68:771–795 (2004).
+\bibitem{Hu-2023} Hu H, Popp PF, Santiveri M, Roa-Eguiara A, Yan Y, Martin FJO, Liu Z, Wadhwa N, Wang Y, Erhardt M, Taylor NMI. \emph{Ion selectivity and rotor coupling of the Vibrio flagellar sodium-driven stator unit}. Nature Communications 14 (2023).
+\bibitem{Jaques-1999} Jaques S, Kim YK, McCarter LL. \emph{Mutations conferring resistance to phenamil and amiloride, inhibitors of sodium-driven motility of Vibrio parahaemolyticus}. Proceedings of the National Academy of Sciences USA 96:5740–5745 (1999).
+\bibitem{Macnab-1999} Macnab RM. \emph{The Bacterial Flagellum: Reversible Rotary Propellor and Type III Export Apparatus}. Journal of Bacteriology 181:7149–7153 (1999).
+\bibitem{Minamino-2011} Minamino T, Morimoto YV, Hara N, Namba K. \emph{An energy transduction mechanism used in bacterial flagellar type III protein export}. Nature Communications 2:475 (2011).
+\bibitem{Shapiro-1995} Shapiro L. \emph{The Bacterial Flagellum: From Genetic Network to Complex Architecture}. Cell 80:525–527 (1995).
+\bibitem{Sowa-2008-c} Sowa Y, Berry RM. \emph{Bacterial flagellar motor}. Quarterly Reviews of Biophysics 41:103–132 (2008).
+\bibitem{Sowa-2008-d} Sowa Y, Berry RM. \emph{Bacterial flagellar motor}. Quarterly Reviews of Biophysics 41:103-132 (2008).
+\bibitem{Stephens-1996} Stephens C, Shapiro L. \emph{Bacterial pathogenesis: Delivering the payload}. Current Biology 6:927–930 (1996).
+\bibitem{Sowa-2008-b} Terashima H, Kawamoto A, Morimoto YV, Imada K, Minamino T. \emph{Structural differences in the bacterial flagellar motor among bacterial species}. Biophysics and Physicobiology 14:191–198 (2017).
+\bibitem{Thomas-2001} Thomas NA, Bardy SL, Jarrell KF. \emph{The archaeal flagellum: a different kind of prokaryotic motility structure}. FEMS Microbiology Reviews 25:147–174 (2001).
+\bibitem{Thomas-2002} Thomas NA, Mueller S, Klein A, Jarrell KF. \emph{Mutants in flaI and flaJ of the archaeon Methanococcus voltae are deficient in flagellum assembly}. Molecular Microbiology 46:879–887 (2002).
+\bibitem{Yakushi-2006} Yakushi T, Yang J, Fukuoka H, Homma M, Blair DF. \emph{Roles of Charged Residues of Rotor and Stator in Flagellar Rotation: Comparative Study using H-Driven and Na-Driven Motors in Escherichia coli}. Journal of Bacteriology 188:1466–1472 (2006).
+\end{thebibliography}
+\end{document}

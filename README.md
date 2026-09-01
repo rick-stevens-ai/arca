@@ -93,3 +93,13 @@ mamba env create -f environment.yml && conda activate arca && pip install -e .
 
 Regenerate the lock after a deliberate dep bump + re-verify:
 `pip freeze | grep -ivE '^-e |arca==' | sort > requirements.txt`
+
+
+## Examples
+
+- [`examples/flagellar-evolution/`](examples/flagellar-evolution/) — a complete,
+  reproducible workflow: **build an index over a paper corpus → query it with
+  grounded, cited answers → assemble a short, properly-referenced paper (LaTeX →
+  PDF)**. Showcase: a 516-paper flagellum/ATP corpus producing *"Open Questions in
+  the Evolution of the Bacterial Flagellum"* (finished PDF included). Uses Arca's
+  own `search`/`answer` API, so it doubles as a template for any corpus.
